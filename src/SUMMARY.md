@@ -1,3 +1,5 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [Development Tools](./development-tools.md)
+- [Travis CI](./travis.md)
+    - [Mendaftarkan Repository Github](./travis/mendaftarkan-repository.md)
