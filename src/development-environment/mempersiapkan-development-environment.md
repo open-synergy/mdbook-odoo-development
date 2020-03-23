@@ -3,10 +3,16 @@
 ### 1. Buka terminal
 ### 2. Clone repositori doodba scafolding
 
-Sintaks:
+Sintaks untuk ssh:
 
 ```bash
 git clone -b <versi-odoo> git@github.com:open-synergy/doodba-scaffolding.git <nama-folder-development>
+```
+
+Sintaks untuk https:
+
+```bash
+git clone -b <versi-odoo> https://github.com/open-synergy/doodba-scaffolding.git <nama-folder-development>
 ```
 
 Keterangan:
