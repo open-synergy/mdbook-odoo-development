@@ -39,17 +39,10 @@ Berikut adalah contoh kode:
 
 ![](../img/development-environment/contoh-repo-yaml.png)
 
-### 3. Jalankan git-aggregator
 
-Sintaks:
+### 3. Buka file <nama-folder-development>/odoo/custom/src/repos.yaml
 
-```bash
-sudo docker-compose -f devel.yaml restart odoo
-```
-
-### 4. Buka file <nama-folder-development>/odoo/custom/src/repos.yaml
-
-### 5. Tambahkan entri addons dari repo baru yang mau digunakan
+### 4. Tambahkan entri addons dari repo baru yang mau digunakan
 
 Sintaks untuk menggunakan hanya sebagian modul dalam repo:
 
@@ -86,6 +79,14 @@ oca-server-tools:
 Berikut adalah contoh kode:
 
 ![](../img/development-environment/contoh-addons-yaml.png)
+
+### 5. Jalankan git-aggregator
+
+Sintaks:
+
+```bash
+sudo docker-compose -f devel.yaml restart odoo
+```
 
 ### 6. Restart Container Odoo
 
