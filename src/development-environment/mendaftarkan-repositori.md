@@ -40,7 +40,7 @@ Berikut adalah contoh kode:
 ![](../img/development-environment/contoh-repo-yaml.png)
 
 
-### 3. Buka file <nama-folder-development>/odoo/custom/src/repos.yaml
+### 3. Buka file <nama-folder-development>/odoo/custom/src/addons.yaml
 
 ### 4. Tambahkan entri addons dari repo baru yang mau digunakan
 
@@ -85,7 +85,7 @@ Berikut adalah contoh kode:
 Sintaks:
 
 ```bash
-sudo docker-compose -f devel.yaml restart odoo
+sudo docker-compose -f setup-devel.yaml run --rm odoo
 ```
 
 ### 6. Restart Container Odoo
