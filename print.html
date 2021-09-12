@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="development-tools.html"><strong aria-hidden="true">1.</strong> Development Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development-tools/docker.html"><strong aria-hidden="true">1.1.</strong> Docker</a></li></ol></li><li class="chapter-item expanded "><a href="development-environment.html"><strong aria-hidden="true">2.</strong> Development Environment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development-environment/mempersiapkan-development-environment.html"><strong aria-hidden="true">2.1.</strong> Mempersiapkan Development Environment</a></li><li class="chapter-item expanded "><a href="development-environment/menjalankan-odoo-aplication-service.html"><strong aria-hidden="true">2.2.</strong> Menjalankan Odoo Aplication Service</a></li><li class="chapter-item expanded "><a href="development-environment/mendaftarkan-repositori.html"><strong aria-hidden="true">2.3.</strong> Mendaftarkan Repositori Baru</a></li></ol></li><li class="chapter-item expanded "><a href="github.html"><strong aria-hidden="true">3.</strong> Github</a></li><li class="chapter-item expanded "><a href="travis.html"><strong aria-hidden="true">4.</strong> Travis CI</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="travis/menambahkan-konfigurasi-travis.html"><strong aria-hidden="true">4.1.</strong> Menambahkan Konfigurasi Travis Di Repo</a></li><li class="chapter-item expanded "><a href="travis/mendaftarkan-repository.html"><strong aria-hidden="true">4.2.</strong> Mendaftarkan Repository Github</a></li></ol></li><li class="chapter-item expanded "><a href="unittest.html"><strong aria-hidden="true">5.</strong> Unittest</a></li><li class="chapter-item expanded "><a href="openupgradelib.html"><strong aria-hidden="true">6.</strong> OpenUpgradeLib</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="development-tools.html"><strong aria-hidden="true">1.</strong> Development Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development-tools/docker.html"><strong aria-hidden="true">1.1.</strong> Docker</a></li></ol></li><li class="chapter-item expanded "><a href="development-environment.html"><strong aria-hidden="true">2.</strong> Development Environment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development-environment/mempersiapkan-development-environment.html"><strong aria-hidden="true">2.1.</strong> Mempersiapkan Development Environment</a></li><li class="chapter-item expanded "><a href="development-environment/menjalankan-odoo-aplication-service.html"><strong aria-hidden="true">2.2.</strong> Menjalankan Odoo Aplication Service</a></li><li class="chapter-item expanded "><a href="development-environment/mendaftarkan-repositori.html"><strong aria-hidden="true">2.3.</strong> Mendaftarkan Repositori Baru</a></li></ol></li><li class="chapter-item expanded "><a href="github.html"><strong aria-hidden="true">3.</strong> Github</a></li><li class="chapter-item expanded "><a href="travis.html"><strong aria-hidden="true">4.</strong> Travis CI</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="travis/menambahkan-konfigurasi-travis.html"><strong aria-hidden="true">4.1.</strong> Menambahkan Konfigurasi Travis Di Repo</a></li><li class="chapter-item expanded "><a href="travis/mendaftarkan-repository.html"><strong aria-hidden="true">4.2.</strong> Mendaftarkan Repository Github</a></li></ol></li><li class="chapter-item expanded "><a href="unittest.html"><strong aria-hidden="true">5.</strong> Unittest</a></li><li class="chapter-item expanded "><a href="openupgradelib.html"><strong aria-hidden="true">6.</strong> OpenUpgradeLib</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding.html"><strong aria-hidden="true">7.</strong> Kesepakatan Coding</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data.html"><strong aria-hidden="true">7.1.</strong> Master Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/field-wajib.html"><strong aria-hidden="true">7.1.1.</strong> Field-field Wajib</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/order.html"><strong aria-hidden="true">7.1.2.</strong> Order</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/header-form-view.html"><strong aria-hidden="true">7.1.3.</strong> Header Pada Form View</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/notebook-form-view.html"><strong aria-hidden="true">7.1.4.</strong> Notebook Pada Form View</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/field-wajib-tree-view.html"><strong aria-hidden="true">7.1.5.</strong> Field-field Wajib Pada Tree View</a></li><li class="chapter-item expanded "><a href="kesepakatan-coding/master-data/field-search-view.html"><strong aria-hidden="true">7.1.6.</strong> Field-field Yang Dapat Dicari Pada Search View</a></li></ol></li><li class="chapter-item expanded "><a href="kesepakatan-coding/transaksi.html"><strong aria-hidden="true">7.2.</strong> Transaksi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kesepakatan-coding/transaksi/daftar-abstract-model.html"><strong aria-hidden="true">7.2.1.</strong> Daftar Abstract Model Yang Digunakan</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -342,6 +342,39 @@
 <ul>
 <li><a href="https://doc.therp.nl/openupgrade/">Dokumentasi openupgradelib</a></li>
 </ul>
+<h1><a class="header" href="#kesepakatan-coding" id="kesepakatan-coding">Kesepakatan Coding</a></h1>
+<h1><a class="header" href="#master-data" id="master-data">Master Data</a></h1>
+<h1><a class="header" href="#field-field-wajib" id="field-field-wajib">Field-field Wajib</a></h1>
+<p>Field-field berikut wajib ada disetiap master data:</p>
+<ol>
+<li>name</li>
+<li>code</li>
+<li>active</li>
+<li>description</li>
+<li>sequence</li>
+</ol>
+<h1><a class="header" href="#order" id="order">Order</a></h1>
+<p>Apabila tidak ada instruksi tambahan maka order selalu berdasarkan <strong>sequence, id</strong></p>
+<h1><a class="header" href="#header-pada-form-view" id="header-pada-form-view">Header Pada Form View</a></h1>
+<p>Tampilan form untuk master data harus memiliki header, walaupun tidak ada isinya</p>
+<h1><a class="header" href="#notebook-pada-form-view" id="notebook-pada-form-view">Notebook Pada Form View</a></h1>
+<p>Tampilan form view harus memiliki notebook. Page pertama untuk description.</p>
+<h1><a class="header" href="#field-field-wajib-pada-tree-view" id="field-field-wajib-pada-tree-view">Field-field Wajib Pada Tree View</a></h1>
+<p>Berikut adalah field-field wajib yang harus ditampilkaan pada tree view:</p>
+<ol>
+<li>sequence</li>
+<li>code</li>
+<li>name</li>
+</ol>
+<p>Field <strong>sequence</strong> harus memiliki widget <strong>handler</strong></p>
+<h1><a class="header" href="#field-field-yang-dapat-dicari-pada-search-view" id="field-field-yang-dapat-dicari-pada-search-view">Field-field Yang Dapat Dicari Pada Search View</a></h1>
+<p>Berikut adalah field-field yang wajib dapat dicari:</p>
+<ol>
+<li>name</li>
+<li>code</li>
+</ol>
+<h1><a class="header" href="#transaksi" id="transaksi">Transaksi</a></h1>
+<h1><a class="header" href="#daftar-abstract-model-yang-digunakan" id="daftar-abstract-model-yang-digunakan">Daftar Abstract Model Yang Digunakan</a></h1>
 
                     </main>
 
