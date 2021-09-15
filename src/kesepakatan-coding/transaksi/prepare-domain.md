@@ -1,0 +1,1 @@
+# Method Prepare Untuk Domain
