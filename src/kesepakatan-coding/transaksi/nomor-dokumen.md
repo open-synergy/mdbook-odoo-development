@@ -14,3 +14,5 @@ Nomor dokumen selalu diberikan setelah proses multiple approval selesai dilakuka
 <code data-gist-id="ebae3763e42f9780c03d5d47ae7f942b" data-gist-highlight-line="5" data-gist-line="372-379"></code>
 
 <code data-gist-id="ebae3763e42f9780c03d5d47ae7f942b" data-gist-highlight-line="11,14" data-gist-line="412-431"></code>
+
+Pemberian nomor dokumen selalu harus memperhatikan sequence range.
