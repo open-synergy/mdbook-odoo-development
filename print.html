@@ -478,11 +478,32 @@
 ></script>
 <p><code data-gist-id="560f8269730b3e43bd72041ecd31230e" data-gist-highlight-line="6-8"></code></p>
 <h1><a class="header" href="#field-field-yang-dapat-dicari-pada-search-view" id="field-field-yang-dapat-dicari-pada-search-view">Field-field Yang Dapat Dicari Pada Search View</a></h1>
-<p>Berikut adalah field-field yang wajib dapat dicari:</p>
+<p>Pada search view, terdapat 2 metode pencarian:</p>
+<p><img src="kesepakatan-coding/master-data/../../img/search-view/search-filter-bar.png" alt="" /></p>
+<ol>
+<li>Menggunakan Search Bar</li>
+<li>Menggunakan Filter Bar</li>
+</ol>
+<h3><a class="header" href="#field-field-yang-wajib-dapat-dicari-pada-search-bar" id="field-field-yang-wajib-dapat-dicari-pada-search-bar">Field-field yang wajib dapat dicari pada Search Bar</a></h3>
 <ol>
 <li>name</li>
 <li>code</li>
+<li>type: many2one</li>
 </ol>
+<h3><a class="header" href="#field-field-yang-wajib-dapat-dicari-pada-filter-bar" id="field-field-yang-wajib-dapat-dicari-pada-filter-bar">Field-field yang wajib dapat dicari pada Filter Bar:</a></h3>
+<ol>
+<li>state</li>
+<li>type: many2one</li>
+<li>type: date (day, week, month, year)</li>
+</ol>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js"
+></script>
+<h3><a class="header" href="#contoh-kode-search-bar" id="contoh-kode-search-bar">CONTOH KODE SEARCH BAR</a></h3>
+<p><code data-gist-id="652a38ebcdb82165842a59ba0084114c" data-gist-highlight-line="6-12" data-gist-line="1-12"></code></p>
+<h3><a class="header" href="#contoh-kode-filter-bar" id="contoh-kode-filter-bar">CONTOH KODE FILTER BAR</a></h3>
+<p><code data-gist-id="652a38ebcdb82165842a59ba0084114c" data-gist-line="13-127"></code></p>
 <h1><a class="header" href="#transaksi" id="transaksi">Transaksi</a></h1>
 <h1><a class="header" href="#daftar-abstract-model-yang-digunakan" id="daftar-abstract-model-yang-digunakan">Daftar Abstract Model Yang Digunakan</a></h1>
 <p>Standar abstract model yang digunakan pada object transaksi adalah:</p>
