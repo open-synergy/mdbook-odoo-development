@@ -42,6 +42,7 @@
         - [Notebook Pada Form View](./kesepakatan-coding/transaksi/notebook-form.md)
         - [OpenChatter Pada Form View](./kesepakatan-coding/transaksi/open-chatter-form.md)
 - [Prosedur Pengerjaan Task](./prosedur-pengerjaan-task.md)
+    - [Persiapan Awal](./prosedur-pengerjaan-task/persiapan-awal.md)
     - [Melihat Task](./prosedur-pengerjaan-task/melihat-task.md)
     - [Merubah Status Task Menjadi Doing](./prosedur-pengerjaan-task/status-task-doing.md)
     - [Clone Remote Repository](./prosedur-pengerjaan-task/clone-repository.md)

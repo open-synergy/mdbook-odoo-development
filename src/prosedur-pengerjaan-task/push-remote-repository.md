@@ -55,3 +55,10 @@ Pada terminal, jalankan sintaks berikut:
 git push origin {nama-branch}:{nama-branch}
 ````
 > Note: Nama branch adalah nama branch yang sudah dibuat pada [Membuat Branch Baru](./membuat-branch-baru.md)
+
+#### 6. Konfirmasi Git Push
+
+![](../img/prosedure-pengerjaan-task/github-konfirmasi-push.png)
+
+* **Username** - Isi username dengan user github
+* **Password** - Isi password dengan **Token Github** yang sudah dibuat pada [Persiapan Awal](./persiapan-awal.md)
