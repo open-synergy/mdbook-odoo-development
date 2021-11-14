@@ -19,6 +19,8 @@
         - [Method Prepare Untuk Domain](./kesepakatan-coding/object-general/prepare-domain.md)
         - [Method Untuk Assign Nilai](./kesepakatan-coding/object-general/method-assign.md)    
         - [Konfirmasi Ketika Klik Tombol](./kesepakatan-coding/object-general/konfirmasi-klik-tombol.md)
+    - [User Interface General](./kesepakatan-coding/user-interface-general.md)
+        - [Label Menu](./kesepakatan-coding/user-interface-general/label-menu.md)
     - [Master Data](./kesepakatan-coding/master-data.md)
         - [Field-field Wajib](./kesepakatan-coding/master-data/field-wajib.md)
         - [Order](./kesepakatan-coding/master-data/order.md)
