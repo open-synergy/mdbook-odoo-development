@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Dependencies - Odoo Development</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../development-tools.html"><strong aria-hidden="true">1.</strong> Development Tools</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../development-tools/docker.html"><strong aria-hidden="true">1.1.</strong> Docker</a></li></ol></li><li class="chapter-item expanded "><a href="../../../development-environment.html"><strong aria-hidden="true">2.</strong> Development Environment</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../development-environment/mempersiapkan-development-environment.html"><strong aria-hidden="true">2.1.</strong> Mempersiapkan Development Environment</a></li><li class="chapter-item expanded "><a href="../../../development-environment/menjalankan-odoo-aplication-service.html"><strong aria-hidden="true">2.2.</strong> Menjalankan Odoo Aplication Service</a></li><li class="chapter-item expanded "><a href="../../../development-environment/mendaftarkan-repositori.html"><strong aria-hidden="true">2.3.</strong> Mendaftarkan Repositori Baru</a></li></ol></li><li class="chapter-item expanded "><a href="../../../github.html"><strong aria-hidden="true">3.</strong> Github</a></li><li class="chapter-item expanded "><a href="../../../travis.html"><strong aria-hidden="true">4.</strong> Travis CI</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../travis/menambahkan-konfigurasi-travis.html"><strong aria-hidden="true">4.1.</strong> Menambahkan Konfigurasi Travis Di Repo</a></li><li class="chapter-item expanded "><a href="../../../travis/mendaftarkan-repository.html"><strong aria-hidden="true">4.2.</strong> Mendaftarkan Repository Github</a></li></ol></li><li class="chapter-item expanded "><a href="../../../unittest.html"><strong aria-hidden="true">5.</strong> Unittest</a></li><li class="chapter-item expanded "><a href="../../../openupgradelib.html"><strong aria-hidden="true">6.</strong> OpenUpgradeLib</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding.html"><strong aria-hidden="true">7.</strong> Kesepakatan Coding</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general.html"><strong aria-hidden="true">7.1.</strong> Object General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general/pesan-error-translasi.html"><strong aria-hidden="true">7.1.1.</strong> Pesan Error Dapat Ditranslasi</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general/dictionary-create-write.html"><strong aria-hidden="true">7.1.2.</strong> Method Prepare Untuk create Dan Write</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general/prepare-domain.html"><strong aria-hidden="true">7.1.3.</strong> Method Prepare Untuk Domain</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general/method-assign.html"><strong aria-hidden="true">7.1.4.</strong> Method Untuk Assign Nilai</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/object-general/konfirmasi-klik-tombol.html"><strong aria-hidden="true">7.1.5.</strong> Konfirmasi Ketika Klik Tombol</a></li></ol></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/user-interface-general.html"><strong aria-hidden="true">7.2.</strong> User Interface General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/user-interface-general/label-menu.html"><strong aria-hidden="true">7.2.1.</strong> Label Menu</a></li></ol></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data.html"><strong aria-hidden="true">7.3.</strong> Master Data</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/field-wajib.html"><strong aria-hidden="true">7.3.1.</strong> Field-field Wajib</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/order.html"><strong aria-hidden="true">7.3.2.</strong> Order</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/name-search.html"><strong aria-hidden="true">7.3.3.</strong> Name Search</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/header-form-view.html"><strong aria-hidden="true">7.3.4.</strong> Header Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/notebook-form-view.html"><strong aria-hidden="true">7.3.5.</strong> Notebook Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/smartbutton-form-view.html"><strong aria-hidden="true">7.3.6.</strong> Smartbutton Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/field-wajib-tree-view.html"><strong aria-hidden="true">7.3.7.</strong> Field-field Wajib Pada Tree View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/master-data/field-search-view.html"><strong aria-hidden="true">7.3.8.</strong> Field-field Yang Dapat Dicari Pada Search View</a></li></ol></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi.html"><strong aria-hidden="true">7.4.</strong> Transaksi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/daftar-abstract-model.html"><strong aria-hidden="true">7.4.1.</strong> Daftar Abstract Model Yang Digunakan</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/field-wajib.html"><strong aria-hidden="true">7.4.2.</strong> Field-field Wajib</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/restriksi-unlink.html"><strong aria-hidden="true">7.4.3.</strong> Restriksi Unlink</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/name-get.html"><strong aria-hidden="true">7.4.4.</strong> Name Get</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/nomor-dokumen.html"><strong aria-hidden="true">7.4.5.</strong> Pemberian Nomor Dokumen</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/field-id-tree.html"><strong aria-hidden="true">7.4.6.</strong> Field id Pada Tree View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/field-display-name-tree.html"><strong aria-hidden="true">7.4.7.</strong> Field display_name name Pada Tree View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/field-name-form.html"><strong aria-hidden="true">7.4.8.</strong> Field name dan display_name Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/header-form.html"><strong aria-hidden="true">7.4.9.</strong> Header Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/smart-button-form.html"><strong aria-hidden="true">7.4.10.</strong> Smart Button Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/notebook-form.html"><strong aria-hidden="true">7.4.11.</strong> Notebook Pada Form View</a></li><li class="chapter-item expanded "><a href="../../../kesepakatan-coding/transaksi/open-chatter-form.html"><strong aria-hidden="true">7.4.12.</strong> OpenChatter Pada Form View</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task.html"><strong aria-hidden="true">8.</strong> Prosedur Pengerjaan Task</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/persiapan-awal.html"><strong aria-hidden="true">8.1.</strong> Persiapan Awal</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/melihat-task.html"><strong aria-hidden="true">8.2.</strong> Melihat Task</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/status-task-doing.html"><strong aria-hidden="true">8.3.</strong> Merubah Status Task Menjadi Doing</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/clone-repository.html"><strong aria-hidden="true">8.4.</strong> Clone Remote Repository</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/fetch-origin.html"><strong aria-hidden="true">8.5.</strong> Fetch &amp; Rebase Remote Repository</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/membuat-branch-baru.html"><strong aria-hidden="true">8.6.</strong> Membuat Branch Baru</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/push-remote-repository.html"><strong aria-hidden="true">8.7.</strong> Push Remote Repository</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/melakukan-pull-request.html"><strong aria-hidden="true">8.8.</strong> Melakukan Pull Request</a></li><li class="chapter-item expanded "><a href="../../../prosedur-pengerjaan-task/status-task-internal-review.html"><strong aria-hidden="true">8.9.</strong> Merubah Status Task Menjadi Internal Review</a></li></ol></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task.html"><strong aria-hidden="true">9.</strong> Prosedur Penyelesaian Task</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/multiple-approval.html"><strong aria-hidden="true">9.1.</strong> Multiple Approval</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/8.0/ver-8.html"><strong aria-hidden="true">9.1.1.</strong> Version 8.0</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/11.0/ver-11.html"><strong aria-hidden="true">9.1.2.</strong> Version 11.0</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/11.0/ma-dependencies.html"><strong aria-hidden="true">9.1.2.1.</strong> Dependencies</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/11.0/model.html"><strong aria-hidden="true">9.1.2.2.</strong> Model</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/multiple-approval/11.0/view.html"><strong aria-hidden="true">9.1.2.3.</strong> View</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/workflow-policy.html"><strong aria-hidden="true">9.2.</strong> Workflow Policy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/8.0/ver-8.html"><strong aria-hidden="true">9.2.1.</strong> Version 8.0</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/ver-11.html"><strong aria-hidden="true">9.2.2.</strong> Version 11.0</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/dependencies.html" class="active"><strong aria-hidden="true">9.2.2.1.</strong> Dependencies</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/model.html"><strong aria-hidden="true">9.2.2.2.</strong> Model</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/view.html"><strong aria-hidden="true">9.2.2.3.</strong> View</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/sequence-policy/sequence-policy.html"><strong aria-hidden="true">9.3.</strong> Sequence Policy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/sequence-policy/8.0/ver-8.html"><strong aria-hidden="true">9.3.1.</strong> Version 8.0</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/sequence-policy/11.0/ver-11.html"><strong aria-hidden="true">9.3.2.</strong> Version 11.0</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/sequence-policy/11.0/dependencies.html"><strong aria-hidden="true">9.3.2.1.</strong> Dependencies</a></li><li class="chapter-item expanded "><a href="../../../prosedur-penyelesaian-task/sequence-policy/11.0/model.html"><strong aria-hidden="true">9.3.2.2.</strong> Model</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../troubleshoot.html"><strong aria-hidden="true">10.</strong> Troubleshoot</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../troubleshoot/docker.html"><strong aria-hidden="true">10.1.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../troubleshoot/docker/error-invoke.html"><strong aria-hidden="true">10.1.1.</strong> Error pada saat invoke</a></li><li class="chapter-item expanded "><a href="../../../troubleshoot/docker/error-git-aggregate.html"><strong aria-hidden="true">10.1.2.</strong> Error pada git-aggregate</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Odoo Development</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#dependencies" id="dependencies">Dependencies</a></h1>
+<p>Menambahkan dependencies module <strong>ssi_policy_mixin</strong> di file <strong><strong>manifest</strong>.py</strong></p>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js"
+></script>
+<h3><a class="header" href="#contoh-kode" id="contoh-kode">CONTOH KODE</a></h3>
+<p><code data-gist-id="16e51ab3c4c60b2334c5469d07fb9884" data-gist-highlight-line="11" data-gist-line="5-21"></code></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/ver-11.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/model.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/ver-11.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../../prosedur-penyelesaian-task/workflow-policy/11.0/model.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
