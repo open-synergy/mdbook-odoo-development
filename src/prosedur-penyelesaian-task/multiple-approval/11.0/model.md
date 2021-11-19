@@ -1,13 +1,13 @@
-# Object
+# Model
 
-Pada object, ada beberapa hal yang perlu dilakukan:
+Pada model, ada beberapa hal yang perlu dilakukan:
 
 <script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js"
 ></script>
 
-#### 1. Inherit object mixin.multiple_approval
+#### 1. Inherit model mixin.multiple_approval
 
 CONTOH KODE:
 
