@@ -29,9 +29,9 @@ CONTOH KODE:
 
 <code data-gist-id="d3543c33d1466d772b04beb562b1ce48" data-gist-line="58-86"></code>
 
-#### 4. Menambahkan method **_get_template_id**
+#### 4. Menambahkan method **_get_template_policy**
 
-Method **_get_template_id** ini berfungsi untuk mencari template yang sesuai dengan kriteria. <br/>
+Method **_get_template_policy** ini berfungsi untuk mencari template yang sesuai dengan kriteria. <br/>
 Pengisian **template_id** sangat dibutuhkan untuk menentukan isian dari **field policy** yang sudah dibuat pada langkah sebelumnya.
 
 > Note:
