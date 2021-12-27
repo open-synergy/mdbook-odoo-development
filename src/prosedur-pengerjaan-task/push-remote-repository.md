@@ -30,10 +30,34 @@ pre-commit install
 
 #### 4. Git Commit
 
+Ketentuan standar commit:
+- Pastikan 1 module = 1 commit
+- Format Commit:
+  > [nama_module/repo] version/pre-commit fix/unittest
+  > * keterangan detail commit #1
+  > * keterangan detail commit #2 <br/>
+  > * ... <br/>
+  > * ...
+  > * keterangan detail commit #n
+
 Pada terminal, jalankan sintaks berikut:
 
 ````bash
-git commit -m "[nama-module] Task: {nama-task}"
+git commit -m "{ketentuan-standar-commit}"
+````
+
+Contoh:
+
+````bash
+git commit -m "[module_test_1] 8.0.1.0.0
+Pembuatan Modul Baru"
+````
+````bash
+git commit -m "[module_test_1] pre-commit fix"
+````
+````bash
+git commit -m "[repo_test_1] 8.0
+Initial Commit"
 ````
 
 > Note: Langkah 4.1 diperlukan apabila pre-commit tidak jalan
